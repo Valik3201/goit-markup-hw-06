@@ -9,8 +9,8 @@ Welcome to the next phase of the Web Studio project! This part of the project in
 - All styles for the project are consolidated in a single CSS file named `styles.css`, located in the `css` folder.
 - The CSS code is formatted using Prettier, ensuring consistent and readable code.
 - All images and textual content are accurately placed within the layout as per the original design.
-- The project utilizes the (`modern-normalize`)[https://github.com/sindresorhus/modern-normalize] stylesheet to ensure a consistent rendering across different browsers.
-- The HTML code follows the guidelines provided in the (tutorial)[https://codeguide.co/].
+- The project utilizes the [`modern-normalize`](https://github.com/sindresorhus/modern-normalize) stylesheet to ensure a consistent rendering across different browsers.
+- The HTML code follows the guidelines provided in the [tutorial](https://codeguide.co/).
 
 ### Form Elements
 
