@@ -1,4 +1,4 @@
-# Web Studio Project - HTML Form Elements and Styling
+# Web Studio - HTML Form Elements and Styling
 
 Welcome to the next phase of the Web Studio project! This part of the project includes the integration of HTML form components with  styles, enhancing the user experience when interacting with forms on the web pages. The following provides a breakdown of the contents within this project segment.
 
