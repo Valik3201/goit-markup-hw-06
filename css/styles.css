@@ -273,9 +273,9 @@ a.main-link::after {
   letter-spacing: 0.48px;
 }
 
-.subscribe-section input:focus {
+/* .subscribe-section input:focus {
   border: 1px solid var(--iris, #4d5ae5);
-}
+} */
 
 .subscribe-btn {
   display: inline-flex;
