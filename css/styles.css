@@ -104,19 +104,6 @@ button:focus {
   letter-spacing: 0.32px;
 }
 
-.visually-hidden {
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  margin: -1px;
-}
-
 /* 3. Structure Styles
 ---------------------------------------- */
 
@@ -129,6 +116,19 @@ button:focus {
 
 .flex-column {
   flex-direction: column;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
 
 /* 4. Module Styles
@@ -815,6 +815,7 @@ label {
   height: 120px;
   padding: 8px 16px;
   color: var(--navyblue, #2e2f42);
+  letter-spacing: 0.48px;
   border-radius: 4px;
   border: 1px solid var(--navyblue-modal, rgba(46, 47, 66, 0.4));
   margin-bottom: 16px;
@@ -832,12 +833,43 @@ label {
   margin-bottom: 24px;
 }
 
+.form-wrapper-checkbox label {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
 .form-wrapper-checkbox a {
   color: var(--iris, #4d5ae5);
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 0.48px;
   text-decoration-line: underline;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-wrapper-checkbox a:hover,
+.form-wrapper-checkbox a:focus {
+  color: var(--ocean, #404bbf);
+}
+
+.checkbox-icon {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  border-radius: 2px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  fill: transparent;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#terms:checked ~ .checkbox-icon {
+  background-color: var(--ocean, #404bbf);
+  border: none;
+  fill: var(--cloud, #f4f4fd);
 }
 
 .send-btn {
@@ -859,6 +891,8 @@ label {
 
   border: none;
   cursor: pointer;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .send-btn:hover,

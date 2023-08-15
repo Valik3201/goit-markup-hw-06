@@ -677,7 +677,7 @@
           </p>
           <label for="name">Name</label>
           <div class="form-wrapper">
-            <input type="text" id="name" name="name" />
+            <input type="text" id="name" name="name" autocomplete="off" />
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="18"
@@ -692,7 +692,7 @@
 
           <label for="phone">Phone</label>
           <div class="form-wrapper">
-            <input type="tel" id="phone" name="phone" />
+            <input type="tel" id="phone" name="phone" autocomplete="off" />
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="18"
@@ -707,7 +707,7 @@
 
           <label for="email">Email</label>
           <div class="form-wrapper">
-            <input type="email" id="email" name="email" />
+            <input type="email" id="email" name="email" autocomplete="off" />
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="18"
@@ -726,14 +726,32 @@
               id="comment"
               name="comment"
               placeholder="Text input"
+              autocomplete="off"
             ></textarea>
           </div>
 
           <div class="form-wrapper-checkbox">
-            <label>
-              <input type="checkbox" id="terms" name="terms" />
-              I accept the terms and conditions of the
-              <a href="">Privacy Policy</a>
+            <label for="terms">
+              <input
+                type="checkbox"
+                id="terms"
+                name="terms"
+                class="visually-hidden"
+              />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="10"
+                height="8"
+                aria-label="Check Mark"
+                fill="currentColor"
+                class="checkbox-icon"
+              >
+                <use href="images/icons.svg#icon-check-mark-2"></use>
+              </svg>
+              <span
+                >I accept the terms and conditions of the
+                <a href="">Privacy Policy</a>
+              </span>
             </label>
           </div>
           <button type="submit" class="send-btn">Send</button>
